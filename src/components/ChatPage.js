@@ -49,7 +49,7 @@ class ChatPage extends React.Component {
   }
 
   initConnectionSockJS = () => {
-    let serverUrl = 'http://192.168.1.31:8080/chat-socket';
+    let serverUrl = 'https://simplechat-api.herokuapp.com/chat-socket';
     let ws = new SockJS(serverUrl);
     this.stompClient = Stomp.over(ws);
     let that = this;
